@@ -8,7 +8,7 @@ As a data specialist working for Salifort Motors, I have been assigned by  The s
 
 Here, I analyzed the data, which included variables such as monthly working hours, number of projects, promotion status, department, and salary.
 
-The project requirements was mainly to build either a logistic regression or a decision tree model however I've  created 5 classification models namely Logistic Regression, Decision Tree with and without hyperparameter tuning, Random Forest, and XGBoost to correctly classify employees who'll leave or stay in the company. Then I evaluated the models using metrics such as accuracy, recall, precision, f1 score, and confusion matrix. 
+The project requirements was mainly to build either a logistic regression or a decision tree model however I've  created 5 classification models namely Logistic Regression, Decision Tree with and without hyperparameter tuning, Random Forest to correctly classify employees who'll leave or stay in the company. Then I evaluated the models using metrics such as accuracy, recall, precision, f1 score, and confusion matrix. 
 
 Finally I summarized the results and presented the recommendations for Salifort’s Senior Leadership team and Human Resources (HR) team with an Executive Summary.
    
@@ -173,7 +173,6 @@ We'll build 4 models -
 1. Logistic Regression
 2. Decision Trees
 3. Random Forest
-4. XGBoost model
 
 We'll choose the one with highest evaluation scores and implement it to predict whether an employee will leave or not.
 
