@@ -24,7 +24,6 @@ Python - for Data Cleaning, Exploratory Data Analysis and building machine learn
 3. Logistic regression model
 4. Decision tree
 5. Random forest
-6. XGBoost
 
 The entire project from collecting and validating the data, exploratory data analysis, building machine learning models to predict employee churn and communicating the results to the stakeholders is based on PACE workflow. PACE is an acronym; each one of the letters represents an actionable stage in a project: plan, analyze, construct, and execute.
 
@@ -169,10 +168,10 @@ The HR department can look further into the matter by asking the following quest
 
 ###  Selecting models for the project:
 Since our predictor variable 'left' is a binary/categorical variable (i.e., with only 2 possibilities, either 0 if stayed or 1 if left) we'll go for a classification model. 
-We'll build 4 models -
+The models we built -
 1. Logistic Regression
-2. Decision Trees
-3. Random Forest
+2. Decision Trees with and without feature engineering
+3. Random Forest with and without feature engineering
 
 We'll choose the one with highest evaluation scores and implement it to predict whether an employee will leave or not.
 
@@ -192,15 +191,6 @@ We'll choose the one with highest evaluation scores and implement it to predict 
 3. **Precision Score**: The proportion of positive predictions that were true positives. 
 4. **F1 score**: It’s a harmonic mean of “precision” & “recall”, taking both the metrics into account.
 5. **Confusion matrix**: A graphical representation of how accurate a classifier is at predicting the labels for a categorical variable*
-   * True negatives: The count of observations that the classifier correctly predicted as False (0). In this case, the classifier will correctly predict the employees who didn't leave.
-
-   * True positives: The count of observations that a classifier correctly predicted as True (1) i.e. the classifier will correctly predict the employees who left.
-
-   * False positives: The count of observations that a classifier incorrectly predicted as True (1) i.e. the classifier will predict employees as left but in reality, who stayed.
-
-   * False negatives: The count of observations that a classifier incorrectly predicted as False (0). In this case, the classifier will incorrectly predict employees as stayed but in reality, who left.
-
-The False negatives may cause the company to spend more resources on an employee who decides to leave. The False positives may cause the company to think an employee will leave and won't put resources on this employee. False negatives will be worse for the company, false positives will be worse for employees.
 
 
 ## Summary of model results
